@@ -1,0 +1,74 @@
+ .gitignore                                  |   28 [32m+[m
+ README.md                                   |  177 [32m++[m
+ backend/app/__init__.py                     |    0
+ backend/app/api/__init__.py                 |    0
+ backend/app/api/benchmarks.py               |   30 [32m+[m
+ backend/app/api/health.py                   |   13 [32m+[m
+ backend/app/api/metrics.py                  |   11 [32m+[m
+ backend/app/api/scenarios.py                |   36 [32m+[m
+ backend/app/api/scheduling.py               |  162 [32m++[m
+ backend/app/api/workers.py                  |   65 [32m+[m
+ backend/app/main.py                         |   32 [32m+[m
+ backend/app/metrics/__init__.py             |    0
+ backend/app/metrics/benchmark.py            |   75 [32m+[m
+ backend/app/metrics/collector.py            |   38 [32m+[m
+ backend/app/models/__init__.py              |    0
+ backend/app/models/decision.py              |   40 [32m+[m
+ backend/app/models/metrics.py               |   36 [32m+[m
+ backend/app/models/request.py               |   39 [32m+[m
+ backend/app/models/worker.py                |   58 [32m+[m
+ backend/app/scenarios.py                    |  427 [32m++++[m
+ backend/app/scheduler/__init__.py           |    0
+ backend/app/scheduler/astrapulse.py         |    3 [32m+[m
+ backend/app/scheduler/base.py               |   71 [32m+[m
+ backend/app/scheduler/least_loaded.py       |    3 [32m+[m
+ backend/app/scheduler/round_robin.py        |    3 [32m+[m
+ backend/app/workers/__init__.py             |    0
+ backend/app/workers/registry.py             |  141 [32m++[m
+ backend/app/workers/simulation.py           |   50 [32m+[m
+ backend/requirements.txt                    |    5 [32m+[m
+ backend/tests/__init__.py                   |    0
+ backend/tests/conftest.py                   |   16 [32m+[m
+ backend/tests/test_health.py                |   23 [32m+[m
+ backend/tests/test_scenarios.py             |  211 [32m++[m
+ backend/tests/test_scheduler.py             |  216 [32m++[m
+ backend/tests/test_workers.py               |  130 [32m++[m
+ benchmarks/README.md                        |    0
+ docs/api-contract.md                        |  873 [32m++++++++[m
+ docs/architecture.md                        |  360 [32m++++[m
+ docs/benchmark-methodology.md               |  626 [32m++++++[m
+ docs/data-models.md                         |  368 [32m++++[m
+ docs/scenario-laboratory.md                 |   64 [32m+[m
+ docs/schema-evolution-proposal.md           |  272 [32m+++[m
+ frontend/index.html                         |   20 [32m+[m
+ frontend/package-lock.json                  | 3083 [32m+++++++++++++++++++++++++++[m
+ frontend/package.json                       |   27 [32m+[m
+ frontend/public/favicon.svg                 |   16 [32m+[m
+ frontend/src/3d/InfrastructureScene.jsx     |  250 [32m+++[m
+ frontend/src/3d/OrchestratorCore.jsx        |  153 [32m++[m
+ frontend/src/3d/RoutingAnimation.jsx        |  155 [32m++[m
+ frontend/src/3d/WorkerNetwork.jsx           |  197 [32m++[m
+ frontend/src/3d/sceneConstants.js           |   53 [32m+[m
+ frontend/src/App.jsx                        |   11 [32m+[m
+ frontend/src/charts/BenchmarkChart.jsx      |   66 [32m+[m
+ frontend/src/components/RoutingDecision.jsx |    0
+ frontend/src/components/Sidebar.jsx         |  142 [32m++[m
+ frontend/src/components/WorkerStatus.jsx    |  231 [32m++[m
+ frontend/src/components/WorkspaceHeader.jsx |  107 [32m+[m
+ frontend/src/main.jsx                       |    9 [32m+[m
+ frontend/src/pages/AlertsPage.jsx           |  104 [32m+[m
+ frontend/src/pages/AnalyticsPage.jsx        |  126 [32m++[m
+ frontend/src/pages/CostsPage.jsx            |   91 [32m+[m
+ frontend/src/pages/Dashboard.jsx            |  533 [32m+++++[m
+ frontend/src/pages/LiveMonitorPage.jsx      |  143 [32m++[m
+ frontend/src/pages/OverviewPage.jsx         |  471 [32m++++[m
+ frontend/src/pages/RequestsPage.jsx         |  181 [32m++[m
+ frontend/src/pages/SchedulingPage.jsx       |  141 [32m++[m
+ frontend/src/pages/ShockwavePage.jsx        |  152 [32m++[m
+ frontend/src/pages/TestingPage.jsx          |  163 [32m++[m
+ frontend/src/pages/WorkersPage.jsx          |  315 [32m+++[m
+ frontend/src/services/api.js                |  214 [32m++[m
+ frontend/src/styles/global.css              | 1684 [32m+++++++++++++++[m
+ frontend/src/styles/tokens.css              |  129 [32m++[m
+ frontend/vite.config.js                     |   30 [32m+[m
+ 73 files changed, 13699 insertions(+)
